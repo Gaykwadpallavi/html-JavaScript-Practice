@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function zoomIn()
+    {
+        let photos = document.getElementById('image');
+        photos.width += 50;
+        photos.height += 50;;
+    }
+    function zoomOut()
+    {
+        let photos = document.getElementById('image');
+        photos.width -= 50;
+        photos.height -= 50;;
+    }
+</script>
+<body>
+    <div>
+        <img id="image" src="How-can-colours-help-you-in-your-everyday-life.jpg" alt="" height="500px" width="500px">
+    </div>
+    <button onclick="zoomIn()">Zoom IN</button>
+    <button onclick="zoomOut()">Zoom OUT</button>
+</body>
+</html>

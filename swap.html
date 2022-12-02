@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #s img{
+            height: 100px;
+            width: 100px;
+        }
+        #b{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    <script>
+        function change(param)
+        {
+            let image = document.getElementById(`${param}`);
+            let big = document.getElementById('b');
+            let temp =  document.getElementById(`${param}`).src;
+            image.src = big.src;
+            big.src = temp;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img id="b" src="blue.png" alt="">
+    </div>
+    <div id="s">
+        <img id="one" src="lightblue.png" alt="" onclick="change('one')">
+        <img id="two" src="pink.png" alt="" onclick="change('two')">
+        <img id="three" src="puple.png" alt="" onclick="change('three')">
+        <img id="four" src="yellow.png" alt="" onclick="change('four')">
+    </div>
+</body>
+</html>

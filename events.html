@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="demo1" onmousedown="f1()">Click me</button>
+    <button id="demo2" onmouseup="f2()">Click me</button>
+    <button id="demo3" onmouseenter="f3()">Click me</button>
+    <button id="demo4" onmouseleave="f4()">Click me</button>
+    <script>
+            const btn1=document.getElementById('demo1');
+            const btn2=document.getElementById('demo2');
+            const btn3=document.getElementById('demo3');
+            const btn4=document.getElementById('demo4');
+
+            function f1(){
+                btn1.style.backgroundColor="red";
+            }
+
+            function f2(){
+                btn2.style.backgroundColor="blue";
+            }
+
+            function f3(){
+                btn3.style.backgroundColor="green";
+            }
+
+            function f4(){
+                btn4.style.backgroundColor="red";
+            }
+
+    </script>
+</body>
+</html>
